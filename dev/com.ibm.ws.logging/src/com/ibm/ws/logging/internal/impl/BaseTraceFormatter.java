@@ -1076,6 +1076,7 @@ public class BaseTraceFormatter extends Formatter {
                 kvp = p;
                 if (kvp.getKey().equals("message")) {
                     txt = kvp.getStringValue();
+                    System.out.println("*************************txt: " + txt);
                 } else if (kvp.getKey().equals("loglevel")) {
                     loglevel = kvp.getStringValue();
                 }
